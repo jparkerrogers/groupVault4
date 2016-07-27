@@ -87,13 +87,10 @@ class MessageController {
         for message in messages {
             
             let messageDate = message.dateString
-            print(messageDate)
             let formatter = NSDateFormatter()
             formatter.dateFormat = "MM-dd"
             
             let currentDate = formatter.stringFromDate(NSDate())
-            print("\(currentDate) current")
-            print("\(messageDate) message")
             if currentDate != messageDate {
                 message.delete()
             } else {

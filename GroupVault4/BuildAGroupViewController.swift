@@ -99,13 +99,12 @@ class BuildAGroupViewController: UIViewController, UITableViewDelegate, UITableV
     }
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         tableView.reloadData()
-        print("the cancel button was tapped")
     }
     
     func SearchBarSearchTextEmpty() {
         if searchController?.searchBar.text == "" {
             tableView.reloadData()
-            print("the search text is empty")
+            
         }
     }
     
@@ -164,14 +163,10 @@ class BuildAGroupViewController: UIViewController, UITableViewDelegate, UITableV
             }
         }
         
-        print(selectedUserIDs.count)
         
         if !selectedUserIDs.contains(myIdentifier) {
             selectedUserIDs.append(myIdentifier)
         }
-        
-        print(selectedUserIDs.count)
-        
         
         if groupNameTextField.text == "" || selectedUserIDs.count <= 1 {
             self.showAlert("Error!", message: "Make sure you create a group name and add members.")
@@ -309,7 +304,6 @@ class BuildAGroupViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        print("user cancelled image")
         dismissViewControllerAnimated(true) {
             self.navigationController?.popViewControllerAnimated(true)
         }
@@ -338,9 +332,6 @@ extension BuildAGroupViewController: BuildAGroupTableViewCellDelegate {
         
         user.selectedForGroup = !user.selectedForGroup
         
-        print(user.username)
-        print(user.selectedForGroup)
-        
         tableView.reloadData()
         
     }
@@ -352,3 +343,5 @@ extension BuildAGroupViewController: BuildAGroupTableViewCellDelegate {
     }
     
 }
+
+

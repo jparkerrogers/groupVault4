@@ -214,15 +214,6 @@ class MessageBoardViewController: UIViewController, UITextFieldDelegate, UIImage
         return true
     }
     
-    //    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-    //        if (editingStyle == UITableViewCellEditingStyle.Delete) {
-    //            let selectedMessage = self.groupMessages[indexPath.row]
-    //            groupMessages.removeAtIndex(indexPath.row)
-    //            selectedMessage.delete()
-    //            tableView.reloadData()
-    //        }
-    //    }
-    
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]?  {
         
         let selectedMessage = self.groupMessages[indexPath.row]

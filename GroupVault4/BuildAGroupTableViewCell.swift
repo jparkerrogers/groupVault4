@@ -79,4 +79,3 @@ protocol BuildAGroupTableViewCellDelegate: class {
     func addUserButtonTapped(sender: BuildAGroupTableViewCell)
     
 }
-

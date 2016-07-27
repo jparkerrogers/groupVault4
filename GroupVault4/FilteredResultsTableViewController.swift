@@ -57,9 +57,6 @@ extension FilteredResultsTableViewController: FilteredBuildAGroupTableViewCellDe
         
         user.selectedForGroup = !user.selectedForGroup
         
-        print(user.username)
-        print(user.selectedForGroup)
-        
         tableView.reloadData()
         
     }

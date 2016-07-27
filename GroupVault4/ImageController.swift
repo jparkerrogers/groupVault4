@@ -30,10 +30,9 @@ class ImageController {
         if let identifier = group.identifier {
             if let base64String = image.base64String {
                 FirebaseController.base.childByAppendingPath("groups/\(identifier)/image").setValue(base64String)
-                print(group)
                 group.groupImageString = base64String
                 completion(identifier: base64String)
-                print(group)
+                
             } else {
                 completion(identifier: nil)
             }

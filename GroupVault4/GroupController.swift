@@ -26,7 +26,6 @@ class GroupController {
         var group = Group(groupName: groupName, users: users, identifier: identifier)
         group.save()
         completion(success: identifier, group: group)
-        print(group.identifier)
     }
     
     
@@ -38,5 +37,22 @@ class GroupController {
             let specificGroup = usersGroups.childByAppendingPath(key)
             specificGroup.setValue(group.groupName)
         }
+    }
+    
+    static func removeUserFromGroup(user: User, groupID: String, completion: (group: Group)-> Void) {
+        UserController.sharedController.currentUser = user
+        let currentUser = user.identifier
+        let allGroups = FirebaseController.base.childByAppendingPath("groups")
+        let specificGroup = allGroups.childByAppendingPath(groupID)
+        let usersInGroup = specificGroup.childByAppendingPath("users")
+        print(usersInGroup)
+        usersInGroup.delete(currentUser)
+        
+//        let currentUser = UserController.sharedController.currentUser.identifier
+//        let usersInGroupArray = group.users
+//        for user in usersInGroupArray {
+//            
+//        }
+//    }
     }
 }

@@ -86,6 +86,25 @@ class WelcomeTableViewController: UITableViewController {
         return cell
     }
     
+//    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+//        
+//        let selectedGroup = self.groups[indexPath.row]
+//        
+//        
+//        let leaveAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Leave") { (UITableViewRowAction, NSIndexPath) -> Void in
+//            
+//            
+//            
+//            //            self.groupMessages.removeAtIndex(indexPath.row)
+//            //            selectedMessage.delete()
+//            //            tableView.reloadData()
+//        }
+//        
+//        
+//        return [leaveAction]
+//    }
+    
+    
     func showLoginAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         let action = UIAlertAction(title: "ok", style: .Default, handler: nil)
