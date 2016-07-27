@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC9BE3111D4823A5006857CF /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9BE3101D4823A5006857CF /* Firebase.framework */; };
+		AC9BE3131D4823C5006857CF /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9BE3121D4823C5006857CF /* libicucore.tbd */; };
+		AC9BE3151D4823D2006857CF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9BE3141D4823D2006857CF /* libc++.tbd */; };
+		AC9BE3171D4823DC006857CF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9BE3161D4823DC006857CF /* CFNetwork.framework */; };
+		AC9BE31A1D482409006857CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9BE3191D482409006857CF /* Security.framework */; };
+		AC9BE31C1D482416006857CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9BE31B1D482416006857CF /* SystemConfiguration.framework */; };
+		AC9BE31E1D4825A9006857CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9BE31D1D4825A9006857CF /* Main.storyboard */; };
+		AC9BE3241D482615006857CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE31F1D482615006857CF /* User.swift */; };
+		AC9BE3251D482615006857CF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3201D482615006857CF /* Message.swift */; };
+		AC9BE3261D482615006857CF /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3211D482615006857CF /* Group.swift */; };
+		AC9BE3271D482615006857CF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3221D482615006857CF /* Color.swift */; };
+		AC9BE3281D482615006857CF /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3231D482615006857CF /* Timer.swift */; };
+		AC9BE3301D482625006857CF /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3291D482625006857CF /* UserController.swift */; };
+		AC9BE3311D482625006857CF /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE32A1D482625006857CF /* MessageController.swift */; };
+		AC9BE3321D482625006857CF /* GroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE32B1D482625006857CF /* GroupController.swift */; };
+		AC9BE3331D482625006857CF /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE32C1D482625006857CF /* TimerController.swift */; };
+		AC9BE3341D482625006857CF /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE32D1D482625006857CF /* FirebaseController.swift */; };
+		AC9BE3351D482625006857CF /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE32E1D482625006857CF /* ImageController.swift */; };
+		AC9BE3361D482625006857CF /* ZimageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE32F1D482625006857CF /* ZimageController.swift */; };
+		AC9BE3431D482632006857CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3371D482632006857CF /* LoginViewController.swift */; };
+		AC9BE3441D482632006857CF /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3381D482632006857CF /* SignupViewController.swift */; };
+		AC9BE3451D482632006857CF /* WelcomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3391D482632006857CF /* WelcomeTableViewController.swift */; };
+		AC9BE3461D482632006857CF /* WelcomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE33A1D482632006857CF /* WelcomeTableViewCell.swift */; };
+		AC9BE3471D482632006857CF /* BuildAGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE33B1D482632006857CF /* BuildAGroupViewController.swift */; };
+		AC9BE3481D482632006857CF /* BuildAGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE33C1D482632006857CF /* BuildAGroupTableViewCell.swift */; };
+		AC9BE3491D482632006857CF /* FilteredBuildAGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE33D1D482632006857CF /* FilteredBuildAGroupTableViewCell.swift */; };
+		AC9BE34A1D482632006857CF /* MessageBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE33E1D482632006857CF /* MessageBoardViewController.swift */; };
+		AC9BE34B1D482632006857CF /* ReceiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE33F1D482632006857CF /* ReceiverTableViewCell.swift */; };
+		AC9BE34C1D482632006857CF /* SenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3401D482632006857CF /* SenderTableViewCell.swift */; };
+		AC9BE34D1D482632006857CF /* ReceiverImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3411D482632006857CF /* ReceiverImageViewController.swift */; };
+		AC9BE34E1D482632006857CF /* FilteredResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3421D482632006857CF /* FilteredResultsTableViewController.swift */; };
+		ACA76A931D48230A00EFAE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA76A921D48230A00EFAE1B /* AppDelegate.swift */; };
+		ACA76A9A1D48230A00EFAE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA76A991D48230A00EFAE1B /* Assets.xcassets */; };
+		ACA76A9D1D48230A00EFAE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA76A9B1D48230A00EFAE1B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC9BE3101D4823A5006857CF /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../Firebase.framework; sourceTree = "<group>"; };
+		AC9BE3121D4823C5006857CF /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		AC9BE3141D4823D2006857CF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AC9BE3161D4823DC006857CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AC9BE3191D482409006857CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AC9BE31B1D482416006857CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AC9BE31D1D4825A9006857CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AC9BE31F1D482615006857CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AC9BE3201D482615006857CF /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AC9BE3211D482615006857CF /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		AC9BE3221D482615006857CF /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AC9BE3231D482615006857CF /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		AC9BE3291D482625006857CF /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		AC9BE32A1D482625006857CF /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		AC9BE32B1D482625006857CF /* GroupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupController.swift; sourceTree = "<group>"; };
+		AC9BE32C1D482625006857CF /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		AC9BE32D1D482625006857CF /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		AC9BE32E1D482625006857CF /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		AC9BE32F1D482625006857CF /* ZimageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZimageController.swift; sourceTree = "<group>"; };
+		AC9BE3371D482632006857CF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC9BE3381D482632006857CF /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		AC9BE3391D482632006857CF /* WelcomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeTableViewController.swift; sourceTree = "<group>"; };
+		AC9BE33A1D482632006857CF /* WelcomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeTableViewCell.swift; sourceTree = "<group>"; };
+		AC9BE33B1D482632006857CF /* BuildAGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildAGroupViewController.swift; sourceTree = "<group>"; };
+		AC9BE33C1D482632006857CF /* BuildAGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildAGroupTableViewCell.swift; sourceTree = "<group>"; };
+		AC9BE33D1D482632006857CF /* FilteredBuildAGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredBuildAGroupTableViewCell.swift; sourceTree = "<group>"; };
+		AC9BE33E1D482632006857CF /* MessageBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBoardViewController.swift; sourceTree = "<group>"; };
+		AC9BE33F1D482632006857CF /* ReceiverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverTableViewCell.swift; sourceTree = "<group>"; };
+		AC9BE3401D482632006857CF /* SenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderTableViewCell.swift; sourceTree = "<group>"; };
+		AC9BE3411D482632006857CF /* ReceiverImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverImageViewController.swift; sourceTree = "<group>"; };
+		AC9BE3421D482632006857CF /* FilteredResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredResultsTableViewController.swift; sourceTree = "<group>"; };
+		ACA76A8F1D48230A00EFAE1B /* GroupVault4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupVault4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA76A921D48230A00EFAE1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACA76A991D48230A00EFAE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACA76A9C1D48230A00EFAE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACA76A9E1D48230A00EFAE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACA76A8C1D48230900EFAE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9BE31C1D482416006857CF /* SystemConfiguration.framework in Frameworks */,
+				AC9BE31A1D482409006857CF /* Security.framework in Frameworks */,
+				AC9BE3171D4823DC006857CF /* CFNetwork.framework in Frameworks */,
+				AC9BE3151D4823D2006857CF /* libc++.tbd in Frameworks */,
+				AC9BE3131D4823C5006857CF /* libicucore.tbd in Frameworks */,
+				AC9BE3111D4823A5006857CF /* Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC9BE3181D4823EF006857CF /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				AC9BE3141D4823D2006857CF /* libc++.tbd */,
+				AC9BE3121D4823C5006857CF /* libicucore.tbd */,
+				AC9BE31B1D482416006857CF /* SystemConfiguration.framework */,
+				AC9BE3191D482409006857CF /* Security.framework */,
+				AC9BE3101D4823A5006857CF /* Firebase.framework */,
+				AC9BE3161D4823DC006857CF /* CFNetwork.framework */,
+			);
+			name = Firebase;
+			path = GroupVault4;
+			sourceTree = "<group>";
+		};
+		AC9BE34F1D48263A006857CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC9BE31F1D482615006857CF /* User.swift */,
+				AC9BE3201D482615006857CF /* Message.swift */,
+				AC9BE3211D482615006857CF /* Group.swift */,
+				AC9BE3221D482615006857CF /* Color.swift */,
+				AC9BE3231D482615006857CF /* Timer.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AC9BE3501D482655006857CF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC9BE3291D482625006857CF /* UserController.swift */,
+				AC9BE32A1D482625006857CF /* MessageController.swift */,
+				AC9BE32B1D482625006857CF /* GroupController.swift */,
+				AC9BE32C1D482625006857CF /* TimerController.swift */,
+				AC9BE32D1D482625006857CF /* FirebaseController.swift */,
+				AC9BE32E1D482625006857CF /* ImageController.swift */,
+				AC9BE32F1D482625006857CF /* ZimageController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AC9BE3511D482666006857CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC9BE3371D482632006857CF /* LoginViewController.swift */,
+				AC9BE3381D482632006857CF /* SignupViewController.swift */,
+				AC9BE3391D482632006857CF /* WelcomeTableViewController.swift */,
+				AC9BE33A1D482632006857CF /* WelcomeTableViewCell.swift */,
+				AC9BE33B1D482632006857CF /* BuildAGroupViewController.swift */,
+				AC9BE33C1D482632006857CF /* BuildAGroupTableViewCell.swift */,
+				AC9BE33D1D482632006857CF /* FilteredBuildAGroupTableViewCell.swift */,
+				AC9BE33E1D482632006857CF /* MessageBoardViewController.swift */,
+				AC9BE33F1D482632006857CF /* ReceiverTableViewCell.swift */,
+				AC9BE3401D482632006857CF /* SenderTableViewCell.swift */,
+				AC9BE3411D482632006857CF /* ReceiverImageViewController.swift */,
+				AC9BE3421D482632006857CF /* FilteredResultsTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ACA76A861D48230900EFAE1B = {
+			isa = PBXGroup;
+			children = (
+				ACA76A911D48230A00EFAE1B /* GroupVault4 */,
+				ACA76A901D48230A00EFAE1B /* Products */,
+				AC9BE3181D4823EF006857CF /* Firebase */,
+			);
+			sourceTree = "<group>";
+		};
+		ACA76A901D48230A00EFAE1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACA76A8F1D48230A00EFAE1B /* GroupVault4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACA76A911D48230A00EFAE1B /* GroupVault4 */ = {
+			isa = PBXGroup;
+			children = (
+				ACA76A921D48230A00EFAE1B /* AppDelegate.swift */,
+				AC9BE31D1D4825A9006857CF /* Main.storyboard */,
+				ACA76A991D48230A00EFAE1B /* Assets.xcassets */,
+				AC9BE34F1D48263A006857CF /* Models */,
+				AC9BE3501D482655006857CF /* Controllers */,
+				AC9BE3511D482666006857CF /* ViewControllers */,
+				ACA76A9B1D48230A00EFAE1B /* LaunchScreen.storyboard */,
+				ACA76A9E1D48230A00EFAE1B /* Info.plist */,
+			);
+			path = GroupVault4;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACA76A8E1D48230900EFAE1B /* GroupVault4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA76AA11D48230A00EFAE1B /* Build configuration list for PBXNativeTarget "GroupVault4" */;
+			buildPhases = (
+				ACA76A8B1D48230900EFAE1B /* Sources */,
+				ACA76A8C1D48230900EFAE1B /* Frameworks */,
+				ACA76A8D1D48230900EFAE1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroupVault4;
+			productName = GroupVault4;
+			productReference = ACA76A8F1D48230A00EFAE1B /* GroupVault4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACA76A871D48230900EFAE1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jonathan Rogers";
+				TargetAttributes = {
+					ACA76A8E1D48230900EFAE1B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = ACA76A8A1D48230900EFAE1B /* Build configuration list for PBXProject "GroupVault4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACA76A861D48230900EFAE1B;
+			productRefGroup = ACA76A901D48230A00EFAE1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA76A8E1D48230900EFAE1B /* GroupVault4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA76A8D1D48230900EFAE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA76A9D1D48230A00EFAE1B /* LaunchScreen.storyboard in Resources */,
+				ACA76A9A1D48230A00EFAE1B /* Assets.xcassets in Resources */,
+				AC9BE31E1D4825A9006857CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACA76A8B1D48230900EFAE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9BE34E1D482632006857CF /* FilteredResultsTableViewController.swift in Sources */,
+				AC9BE3431D482632006857CF /* LoginViewController.swift in Sources */,
+				AC9BE34D1D482632006857CF /* ReceiverImageViewController.swift in Sources */,
+				AC9BE34A1D482632006857CF /* MessageBoardViewController.swift in Sources */,
+				AC9BE3251D482615006857CF /* Message.swift in Sources */,
+				AC9BE3241D482615006857CF /* User.swift in Sources */,
+				AC9BE3321D482625006857CF /* GroupController.swift in Sources */,
+				AC9BE3461D482632006857CF /* WelcomeTableViewCell.swift in Sources */,
+				AC9BE34B1D482632006857CF /* ReceiverTableViewCell.swift in Sources */,
+				ACA76A931D48230A00EFAE1B /* AppDelegate.swift in Sources */,
+				AC9BE3361D482625006857CF /* ZimageController.swift in Sources */,
+				AC9BE3471D482632006857CF /* BuildAGroupViewController.swift in Sources */,
+				AC9BE3311D482625006857CF /* MessageController.swift in Sources */,
+				AC9BE3281D482615006857CF /* Timer.swift in Sources */,
+				AC9BE34C1D482632006857CF /* SenderTableViewCell.swift in Sources */,
+				AC9BE3301D482625006857CF /* UserController.swift in Sources */,
+				AC9BE3331D482625006857CF /* TimerController.swift in Sources */,
+				AC9BE3271D482615006857CF /* Color.swift in Sources */,
+				AC9BE3341D482625006857CF /* FirebaseController.swift in Sources */,
+				AC9BE3451D482632006857CF /* WelcomeTableViewController.swift in Sources */,
+				AC9BE3441D482632006857CF /* SignupViewController.swift in Sources */,
+				AC9BE3481D482632006857CF /* BuildAGroupTableViewCell.swift in Sources */,
+				AC9BE3491D482632006857CF /* FilteredBuildAGroupTableViewCell.swift in Sources */,
+				AC9BE3261D482615006857CF /* Group.swift in Sources */,
+				AC9BE3351D482625006857CF /* ImageController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACA76A9B1D48230A00EFAE1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACA76A9C1D48230A00EFAE1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACA76A9F1D48230A00EFAE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACA76AA01D48230A00EFAE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACA76AA21D48230A00EFAE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GroupVault4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Devmountain.GroupVault4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACA76AA31D48230A00EFAE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GroupVault4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Devmountain.GroupVault4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACA76A8A1D48230900EFAE1B /* Build configuration list for PBXProject "GroupVault4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA76A9F1D48230A00EFAE1B /* Debug */,
+				ACA76AA01D48230A00EFAE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA76AA11D48230A00EFAE1B /* Build configuration list for PBXNativeTarget "GroupVault4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA76AA21D48230A00EFAE1B /* Debug */,
+				ACA76AA31D48230A00EFAE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACA76A871D48230900EFAE1B /* Project object */;
+}
