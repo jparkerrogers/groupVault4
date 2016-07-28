@@ -520,7 +520,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="receiverCell" rowHeight="141" id="u4M-y3-xYg" userLabel="receiverCell" customClass="ReceiverCell" customModule="GroupVault4" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="receiverCell" rowHeight="141" id="u4M-y3-xYg" userLabel="receiverCell" customClass="ReceiverTableViewCell" customModule="GroupVault4" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="141"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u4M-y3-xYg" id="7Ka-WX-OmP" userLabel="receiverMainView">
