@@ -93,7 +93,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     
                 } else {
                     self.stopFetchingDataIndicator()
-                    self.showLoginAlert("Invalid information", message: "Provide:\n-jemail\n-password (6 or more characters)")
+                    self.showLoginAlert("Invalid information", message: "Provide:\n-email\n-password (6 or more characters)")
                 }
             })
         }

@@ -99,6 +99,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
                             self.almostDoneAlert("Account successfully created!", message: "Now set a profile picture to continue!")
                         } else {
                             self.showSignupAlert("Unable to create account.", message: "Try a different e-mail or find a location with better service")
+                            self.stopFetchingDataIndicator()
                         }
                     })
                 }

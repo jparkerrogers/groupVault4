@@ -51,6 +51,7 @@ class BuildAGroupViewController: UIViewController, UITableViewDelegate, UITableV
         navigationItem.title = "Build A Group"
         setupSearchController()
         
+        
     }
     
     

@@ -296,6 +296,7 @@
                         <color key="backgroundColor" red="0.24615634750000001" green="0.64524511200000001" blue="0.92081330130000005" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="CYf-OJ-8GG" firstAttribute="top" secondItem="27X-tX-LdK" secondAttribute="bottom" constant="24" id="0n5-f4-JDM"/>
                             <constraint firstItem="27X-tX-LdK" firstAttribute="centerX" secondItem="Cip-yn-Aqr" secondAttribute="centerX" id="5dy-KG-S1F"/>
                             <constraint firstItem="AA0-9X-RXr" firstAttribute="top" secondItem="Cip-yn-Aqr" secondAttribute="top" id="5yJ-gN-sQM"/>
                             <constraint firstItem="46Y-dV-EhH" firstAttribute="centerY" secondItem="AA0-9X-RXr" secondAttribute="centerY" id="6H9-mj-wux"/>
@@ -316,6 +317,11 @@
                             <constraint firstItem="2aW-LR-bkd" firstAttribute="centerX" secondItem="Cip-yn-Aqr" secondAttribute="centerX" id="rUz-Ra-WDf"/>
                             <constraint firstItem="woZ-5h-qln" firstAttribute="top" secondItem="51x-P1-Ptf" secondAttribute="bottom" constant="17" id="yQt-uo-6Xs"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RuD-d6-lRo"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="tAs-Dm-cLN" appends="YES" id="T3v-P0-5Pc"/>
                         </connections>
@@ -974,7 +980,7 @@
             </objects>
             <point key="canvasLocation" x="1321" y="1594"/>
         </scene>
-        <!--BuildA Group View Controller-->
+        <!--Title-->
         <scene sceneID="fg0-gD-WO6">
             <objects>
                 <viewController id="eDf-4g-Mg4" customClass="BuildAGroupViewController" customModule="GroupVault4" customModuleProvider="target" sceneMemberID="viewController">
@@ -1111,6 +1117,13 @@
                             <outletCollection property="gestureRecognizers" destination="XOz-31-3mZ" appends="YES" id="mMr-Ig-UoI"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="7Ck-Yd-fDK">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="KHo-Sb-aLa">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="eDf-4g-Mg4" id="5Tv-J8-AMr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
