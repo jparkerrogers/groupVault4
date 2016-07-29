@@ -49,20 +49,26 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter your email address here", attributes: [NSForegroundColorAttributeName: UIColor.myLightestGrayColor()])
         emailTextField.textColor = UIColor.twitterDarkBlueColor()
         
-        passwordTextField.layer.borderColor = UIColor.myLightestGrayColor().CGColor
-        passwordTextField.layer.borderWidth = 2.5
+//        passwordTextField.layer.borderColor = UIColor.myLightestGrayColor().CGColor
+//        passwordTextField.layer.borderWidth = 2.5
         passwordTextField.layer.cornerRadius = 6.0
         passwordTextField.backgroundColor = UIColor.whiteColor()
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "enter password with 6+ characters", attributes: [NSForegroundColorAttributeName: UIColor.myLightestGrayColor()])
         passwordTextField.textColor = UIColor.twitterDarkBlueColor()
         
-        loginButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
-        loginButtonOutlet.layer.borderWidth = 4.0
+//        loginButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+//        loginButtonOutlet.layer.borderWidth = 4.0
+        loginButtonOutlet.backgroundColor = view.backgroundColor
         loginButtonOutlet.layer.cornerRadius = 6.0
+        loginButtonOutlet.layer.shadowColor = UIColor.blackColor().CGColor
+        loginButtonOutlet.layer.shadowRadius = 3.0
+        loginButtonOutlet.layer.shadowOffset = CGSize(width: 0, height: 2)
+        loginButtonOutlet.layer.shadowOpacity = 0.5
+        loginButtonOutlet.layer.masksToBounds = false
         
-        createAccountOutlet.layer.borderColor = UIColor.whiteColor().CGColor
-        createAccountOutlet.layer.borderWidth = 4.0
-        createAccountOutlet.layer.cornerRadius = 6.0
+//        createAccountOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+//        createAccountOutlet.layer.borderWidth = 4.0
+//        createAccountOutlet.layer.cornerRadius = 6.0
     }
     
     

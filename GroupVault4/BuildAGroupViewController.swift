@@ -87,8 +87,8 @@ class BuildAGroupViewController: UIViewController, UITableViewDelegate, UITableV
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         
-        guard let searchTerm = searchController.searchBar.text?.lowercaseString,
-            resultsController = searchController.searchResultsController as? FilteredResultsTableViewController else { return }
+        guard let searchTerm = searchController.searchBar.text?.lowercaseString else { return }
+        if let resultsController = searchController.searchResultsController as? FilteredResultsTableViewController {
         resultsController.filteredDataSource = self.usersDataSource.filter({ $0.username.lowercaseString.containsString(searchTerm)})
         searchController.hidesNavigationBarDuringPresentation = false
         self.view.backgroundColor = UIColor.lightGrayColor()
@@ -97,6 +97,7 @@ class BuildAGroupViewController: UIViewController, UITableViewDelegate, UITableV
         SearchBarSearchTextEmpty()
         changeViewForSearchBar()
         
+        }
     }
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         tableView.reloadData()

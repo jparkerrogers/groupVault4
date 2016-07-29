@@ -132,9 +132,9 @@ class MessageBoardViewController: UIViewController, UITextFieldDelegate, UIImage
     @IBAction func sendButtonTapped(sender: AnyObject) {
         
         if trueTextView.text != "" {
-            trueKeyboardView.hidden = true
             trueTextView.resignFirstResponder()
             mockTextView.resignFirstResponder()
+            trueKeyboardView.hidden = true
             mockKeyboardView.hidden = false
             createMessage()
             trueTextView.text = ""
