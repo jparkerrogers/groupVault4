@@ -45,7 +45,7 @@ class WelcomeTableViewController: UITableViewController {
             self.tableView.reloadData()
             
             if self.groups.count == 0 {
-                self.showLoginAlert("You aren't in any groups yet!", message: "Tap the top right corner to make a group!")
+                self.showAlert("You aren't in any groups yet!", message: "Tap the top right corner to make a group!")
             }
         }
         
@@ -58,9 +58,7 @@ class WelcomeTableViewController: UITableViewController {
     
     @IBAction func toolbarButtonTapped(sender: AnyObject) {
         
-        
-        FirebaseController.base.unauth()
-        performSegueWithIdentifier("noUserLoggedIn", sender: nil)
+        self.logoutAlert("", message: "Are you sure you want to logout?")
     }
     
     func welcomeLabelForUser() {
@@ -105,10 +103,23 @@ class WelcomeTableViewController: UITableViewController {
 //    }
     
     
-    func showLoginAlert(title: String, message: String) {
+    func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         let action = UIAlertAction(title: "ok", style: .Default, handler: nil)
         alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func logoutAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        let logoutAction = UIAlertAction(title: "Logout", style: .Default) { (action) in
+            FirebaseController.base.unauth()
+            self.performSegueWithIdentifier("noUserLoggedIn", sender: nil)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
+        alert.addAction(logoutAction)
+        alert.addAction(cancelAction)
         presentViewController(alert, animated: true, completion: nil)
     }
     

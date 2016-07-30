@@ -42,8 +42,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         ///UserInterface
         
-        emailTextField.layer.borderColor = UIColor.myLightestGrayColor().CGColor
-        emailTextField.layer.borderWidth = 2.5
+//        emailTextField.layer.borderColor = UIColor.myLightestGrayColor().CGColor
+//        emailTextField.layer.borderWidth = 2.5
         emailTextField.layer.cornerRadius = 6.0
         emailTextField.backgroundColor = UIColor.whiteColor()
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter your email address here", attributes: [NSForegroundColorAttributeName: UIColor.myLightestGrayColor()])

@@ -36,25 +36,27 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         upSwipeGesture()
         tapGestureToDismissKeyBoard()
         
+        
         // User Interface
-        emailTextField.layer.borderColor = UIColor.myLightestGrayColor().CGColor
-        emailTextField.layer.borderWidth = 2.5
+
         emailTextField.layer.cornerRadius = 6.0
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter your email address here", attributes: [NSForegroundColorAttributeName: UIColor.myLightestGrayColor()])
         emailTextField.textColor = UIColor.twitterDarkBlueColor()
-        passwordTextField.layer.borderColor = UIColor.myLightestGrayColor().CGColor
-        passwordTextField.layer.borderWidth = 2.5
+
         passwordTextField.layer.cornerRadius = 6.0
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "enter password with 6+ characters", attributes: [NSForegroundColorAttributeName: UIColor.myLightestGrayColor()])
         passwordTextField.textColor = UIColor.twitterDarkBlueColor()
-        usernameTextField.layer.borderColor = UIColor.myLightestGrayColor().CGColor
-        usernameTextField.layer.borderWidth = 2.5
         usernameTextField.layer.cornerRadius = 6.0
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "enter username here", attributes: [NSForegroundColorAttributeName: UIColor.myLightestGrayColor()])
+        
         usernameTextField.textColor = UIColor.twitterDarkBlueColor()
-        signupButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
-        signupButtonOutlet.layer.borderWidth = 4.0
+        signupButtonOutlet.backgroundColor = view.backgroundColor
         signupButtonOutlet.layer.cornerRadius = 6.0
+        signupButtonOutlet.layer.shadowColor = UIColor.blackColor().CGColor
+        signupButtonOutlet.layer.shadowRadius = 3.0
+        signupButtonOutlet.layer.shadowOffset = CGSize(width: 0, height: 2)
+        signupButtonOutlet.layer.shadowOpacity = 0.5
+        signupButtonOutlet.layer.masksToBounds = false
         
     }
     
