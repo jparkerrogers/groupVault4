@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC00DBA31D4D636300E44829 /* FilteredResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00DBA21D4D636300E44829 /* FilteredResultsViewController.swift */; };
+		AC00DBA51D4D778800E44829 /* FilteredResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00DBA41D4D778800E44829 /* FilteredResultsTableViewController.swift */; };
 		AC9BE3111D4823A5006857CF /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9BE3101D4823A5006857CF /* Firebase.framework */; };
 		AC9BE3131D4823C5006857CF /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9BE3121D4823C5006857CF /* libicucore.tbd */; };
 		AC9BE3151D4823D2006857CF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9BE3141D4823D2006857CF /* libc++.tbd */; };
@@ -37,13 +39,14 @@
 		AC9BE34B1D482632006857CF /* ReceiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE33F1D482632006857CF /* ReceiverTableViewCell.swift */; };
 		AC9BE34C1D482632006857CF /* SenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3401D482632006857CF /* SenderTableViewCell.swift */; };
 		AC9BE34D1D482632006857CF /* ReceiverImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3411D482632006857CF /* ReceiverImageViewController.swift */; };
-		AC9BE34E1D482632006857CF /* FilteredResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BE3421D482632006857CF /* FilteredResultsTableViewController.swift */; };
 		ACA76A931D48230A00EFAE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA76A921D48230A00EFAE1B /* AppDelegate.swift */; };
 		ACA76A9A1D48230A00EFAE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA76A991D48230A00EFAE1B /* Assets.xcassets */; };
 		ACA76A9D1D48230A00EFAE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA76A9B1D48230A00EFAE1B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC00DBA21D4D636300E44829 /* FilteredResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredResultsViewController.swift; sourceTree = "<group>"; };
+		AC00DBA41D4D778800E44829 /* FilteredResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredResultsTableViewController.swift; sourceTree = "<group>"; };
 		AC9BE3101D4823A5006857CF /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../Firebase.framework; sourceTree = "<group>"; };
 		AC9BE3121D4823C5006857CF /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		AC9BE3141D4823D2006857CF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -74,7 +77,6 @@
 		AC9BE33F1D482632006857CF /* ReceiverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverTableViewCell.swift; sourceTree = "<group>"; };
 		AC9BE3401D482632006857CF /* SenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderTableViewCell.swift; sourceTree = "<group>"; };
 		AC9BE3411D482632006857CF /* ReceiverImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverImageViewController.swift; sourceTree = "<group>"; };
-		AC9BE3421D482632006857CF /* FilteredResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredResultsTableViewController.swift; sourceTree = "<group>"; };
 		ACA76A8F1D48230A00EFAE1B /* GroupVault4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupVault4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA76A921D48230A00EFAE1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA76A991D48230A00EFAE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,11 +151,12 @@
 				AC9BE33B1D482632006857CF /* BuildAGroupViewController.swift */,
 				AC9BE33C1D482632006857CF /* BuildAGroupTableViewCell.swift */,
 				AC9BE33D1D482632006857CF /* FilteredBuildAGroupTableViewCell.swift */,
+				AC00DBA21D4D636300E44829 /* FilteredResultsViewController.swift */,
+				AC00DBA41D4D778800E44829 /* FilteredResultsTableViewController.swift */,
 				AC9BE33E1D482632006857CF /* MessageBoardViewController.swift */,
 				AC9BE33F1D482632006857CF /* ReceiverTableViewCell.swift */,
 				AC9BE3401D482632006857CF /* SenderTableViewCell.swift */,
 				AC9BE3411D482632006857CF /* ReceiverImageViewController.swift */,
-				AC9BE3421D482632006857CF /* FilteredResultsTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -262,8 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9BE34E1D482632006857CF /* FilteredResultsTableViewController.swift in Sources */,
 				AC9BE3431D482632006857CF /* LoginViewController.swift in Sources */,
+				AC00DBA31D4D636300E44829 /* FilteredResultsViewController.swift in Sources */,
 				AC9BE34D1D482632006857CF /* ReceiverImageViewController.swift in Sources */,
 				AC9BE34A1D482632006857CF /* MessageBoardViewController.swift in Sources */,
 				AC9BE3251D482615006857CF /* Message.swift in Sources */,
@@ -281,6 +284,7 @@
 				AC9BE3331D482625006857CF /* TimerController.swift in Sources */,
 				AC9BE3271D482615006857CF /* Color.swift in Sources */,
 				AC9BE3341D482625006857CF /* FirebaseController.swift in Sources */,
+				AC00DBA51D4D778800E44829 /* FilteredResultsTableViewController.swift in Sources */,
 				AC9BE3451D482632006857CF /* WelcomeTableViewController.swift in Sources */,
 				AC9BE3441D482632006857CF /* SignupViewController.swift in Sources */,
 				AC9BE3481D482632006857CF /* BuildAGroupTableViewCell.swift in Sources */,

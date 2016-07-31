@@ -1,3 +1,10 @@
+//
+//  FilteredResultsTableViewController.swift
+//  GroupVault4
+//
+//  Created by Jonathan Rogers on 7/30/16.
+//  Copyright © 2016 Jonathan Rogers. All rights reserved.
+//
 
 import UIKit
 

@@ -70,7 +70,7 @@ class BuildAGroupViewController: UIViewController, UITableViewDelegate, UITableV
         let resultsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("filteredResults")
         searchController = UISearchController(searchResultsController: resultsController)
         guard let searchController = searchController else { return }
-        searchController.view.frame = self.tableView.frame
+        searchController.view.frame = self.view.frame
         searchController.searchBar.placeholder = "Search users"
         searchController.searchBar.sizeToFit()
         searchController.searchResultsUpdater = self

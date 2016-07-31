@@ -100,15 +100,15 @@ class MessageBoardViewController: UIViewController, UITextFieldDelegate, UIImage
         
         imageAccessoryImageView.userInteractionEnabled = true
         
-        let imageDownSwipe = UISwipeGestureRecognizer(target: self, action: #selector(MessageBoardViewController.dismissImage))
+        let imageDownSwipe = UISwipeGestureRecognizer(target: self, action: #selector(MessageBoardViewController.messageImageTimerComplete))
         imageDownSwipe.direction = .Down
         self.imageAccessoryImageView.addGestureRecognizer(imageDownSwipe)
         
-        let imageUpSwipe = UISwipeGestureRecognizer(target: self, action: #selector(MessageBoardViewController.dismissImage))
+        let imageUpSwipe = UISwipeGestureRecognizer(target: self, action: #selector(MessageBoardViewController.messageImageTimerComplete))
         imageUpSwipe.direction = .Up
         self.imageAccessoryImageView.addGestureRecognizer(imageUpSwipe)
         
-        let cancelButtonTouched = UITapGestureRecognizer(target: self, action: #selector(MessageBoardViewController.dismissImage))
+        let cancelButtonTouched = UITapGestureRecognizer(target: self, action: #selector(MessageBoardViewController.messageImageTimerComplete))
         imageDownSwipe.direction = .Down
         self.imageAccessoryCancelButton.addGestureRecognizer(cancelButtonTouched)
         
