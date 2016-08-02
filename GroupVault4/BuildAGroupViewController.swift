@@ -165,8 +165,7 @@ class BuildAGroupViewController: UIViewController, UITableViewDelegate, UITableV
                 selectedUserIDs.append(user.identifier!)
             }
         }
-        
-        
+    
         if !selectedUserIDs.contains(myIdentifier) {
             selectedUserIDs.append(myIdentifier)
         }
@@ -334,6 +333,7 @@ extension BuildAGroupViewController: BuildAGroupTableViewCellDelegate {
         let user = userStatus(indexPath!)
         
         user.selectedForGroup = !user.selectedForGroup
+        print(user.username)
         
         tableView.reloadData()
         

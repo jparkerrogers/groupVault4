@@ -48,7 +48,6 @@ class WelcomeTableViewController: UITableViewController {
                 self.showAlert("You aren't in any groups yet!", message: "Tap the top right corner to make a group!")
             }
         }
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,6 +79,7 @@ class WelcomeTableViewController: UITableViewController {
         let group = self.groups[indexPath.row]
         
         cell.groupViewOnCell(group)
+        
         
         return cell
     }

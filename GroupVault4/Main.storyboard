@@ -214,8 +214,6 @@
         <!--Sign Up View Controller-->
         <scene sceneID="dqO-ng-eUq">
             <objects>
-                <tapGestureRecognizer id="tAs-Dm-cLN"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nZq-9F-pqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="gTG-k3-6Xe" customClass="SignUpViewController" customModule="GroupVault4" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="51x-P1-Ptf"/>
@@ -402,6 +400,8 @@
                         <segue destination="81E-RX-aak" kind="show" identifier="fromSignupToWelcome" id="YhC-xy-oKw"/>
                     </connections>
                 </viewController>
+                <tapGestureRecognizer id="tAs-Dm-cLN"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZq-9F-pqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="566" y="1150"/>
         </scene>
@@ -1190,6 +1190,7 @@
                         <outlet property="blurryView" destination="MEe-cb-IUq" id="moG-40-9wV"/>
                         <outlet property="fetchAllUsersIndicator" destination="L4C-vp-oP7" id="NTx-Fv-ycD"/>
                         <outlet property="groupImageView" destination="PZr-ed-d6m" id="ZLh-fl-QtO"/>
+                        <outlet property="groupNameTextField" destination="NUm-L8-saN" id="4Vp-hE-Zxm"/>
                         <outlet property="tableView" destination="xdH-4l-guD" id="vli-Nn-iF1"/>
                     </connections>
                 </viewController>
