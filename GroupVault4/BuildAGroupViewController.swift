@@ -124,13 +124,6 @@ class BuildAGroupViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        //        if filteredDataSource.count > 0 {
-        //            return filteredDataSource.count
-        //        } else {
-        //            return usersDataSource.count
-        //        }
-        //        /// return the number of users
-        
         return usersDataSource.count
     }
     
